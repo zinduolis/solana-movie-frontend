@@ -66,7 +66,7 @@ export const Form: FC = () => {
             let txid = await sendTransaction(transaction, connection)
             console.log(`Tx: https://explorer.solana.com/tx/${txid}?cluster=devnet `)
         } catch (error) {
-            alert(JSON.stringify(e))
+            alert(JSON.stringify(error))
         }
     }
 
